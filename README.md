@@ -169,7 +169,6 @@ npm run build
 ### اسکرین رکورد
 
 - `/docs/recordings/demo.gif`
-- <img alt="فرم افزودن کتاب در فرانت‌اند" src="./docs/recordings/demo.gif"/>
 ![hippo](./docs/recordings/demo.gif)
 
   ، افزودن کتاب، نمایش لیست در فرانت‌اند و کار با بخش React در ادمین.
