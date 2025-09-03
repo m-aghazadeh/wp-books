@@ -1,0 +1,12 @@
+{
+  "name": "yourname/wp-books",
+  "type": "wordpress-plugin",
+  "autoload": {
+    "psr-4": {
+      "WPBooks\\": "inc/classes/"
+    },
+    "files": [
+      "inc/functions.php"
+    ]
+  }
+}

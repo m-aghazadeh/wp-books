@@ -1,0 +1,16 @@
+@import "../../../scss/main";
+
+#wp-books-app {
+  @apply container;
+  padding-top: 1rem;
+}
+
+.toplevel_page_wp-books {
+  .toplevel_page_wp-books {
+    background-color: var(--color-primary-500) !important;
+
+    &.current {
+      background-color: var(--color-primary-700) !important;
+    }
+  }
+}

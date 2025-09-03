@@ -1,0 +1,113 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  @apply font-yekanbakh;
+
+  &:before, &:after {
+    @apply inline-block;
+  }
+}
+
+::selection {
+  @apply text-white bg-primary-700;
+}
+
+html, body {
+  @apply w-full text-base overflow-x-visible bg-[#F5F5F5];
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply h-full ;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+span, img, strong {
+  @apply inline;
+}
+
+//  HEADINGS
+h1, h2 {
+  @apply font-black;
+  line-height: normal;
+
+}
+
+h3, h4, h5, h6 {
+  @apply font-bold;
+  line-height: normal;
+
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5, h6 {
+  font-size: 20px;
+}
+
+input[type="number"] {
+  @apply appearance-none text-left;
+  -moz-appearance: textfield;
+  direction: ltr;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    @apply text-right;
+    direction: rtl;
+  }
+}
+
+.xdebug-var-dump, .xdebug-error {
+  @apply bg-gray-200 border m-3 p-3 rounded-lg text-left;
+  direction: ltr;
+  font-family: "Cascadia Mono", Consolas, monospace;
+}
+
+
+
+.rank-math-answer {
+  ul {
+    @apply flex flex-col gap-3 text-neutral-800;
+    li {
+      list-style: none;
+
+      &:before {
+        content: "";
+        @apply w-8 h-1 bg-[#E6E6E6] ml-2;
+      }
+    }
+  }
+}
+
+
+.tb-toggle summary::-webkit-details-marker {
+}
+
+.tb-toggle[open] .tb-summary {
+  opacity: .7;
+}
+
+.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6 {
+  font-family: "yekanbakh"
+}
